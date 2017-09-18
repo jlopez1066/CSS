@@ -1,0 +1,50 @@
+/* Author: Chaney Credeur
+* Created: 06/18/15
+* Last Modified: 2015-11-30 11:49:15 -0500
+**
+* Clean Up
+* -------------- */
+.pt_customer-service .contact-us-container {
+	margin: 0 auto;
+	position: relative;
+	width: 100%; }
+	.pt_customer-service .contact-us-container #secondary {
+		display: none; }
+	.pt_customer-service .contact-us-container .breadcrumb {
+		display: none; }
+.pt_customer-service .primary-content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	background: transparent; }
+	.pt_customer-service .primary-content:after {
+		background: none; }
+.pt_customer-service .primary-content:after {
+	width: 100%;
+	right: 0; }
+
+.search-result-found, .article-search-result-found {
+	overflow: visible; }
+.oc-wrapper, .oc-wrapper:after, .oc-wrapper:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+#lookbook {
+	margin-top: 132px;
+}
+@media handheld, only screen and (max-width: 767px) {
+	#lookbook {
+		margin-top: 0; } }
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	#lookbook {
+		margin-top: 85px; } }
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+	#lookbook {
+		margin-top: 110px; }
+	#header {
+		height: auto; } }
+@media only screen and (max-width: 1279px) and (min-width: 768px) and (orientation: landscape) {
+  #header .wrapper, #wrapper, #wrapper.pt_error, .home-bottom-two-slots, .section-container {
+	width: 100%;
+	min-width: 0; } }

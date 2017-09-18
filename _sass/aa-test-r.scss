@@ -1,0 +1,48 @@
+@import "var";
+@import "cleanup";
+@import "include-media";
+
+.aa-test-container {
+	margin:0 auto;
+	width: 320px;
+	@include media (">=phone", ">=desktop") {
+		width: 1024px;
+	}
+	@include media (">=phone", ">=tablet", "portrait") {
+		width: 768px;
+	}
+	@include media (">desktop") {
+		width:1280px;
+	}
+}
+.full-marquee, .promo-row {
+	margin: 1em auto;
+	width: 100%
+}
+.slick-prev, .slick-next {
+	z-index: 99;
+}
+.promo-row>div {
+	display: inline-block;
+	margin-right: 0;
+	@include media ("<=phone") {
+		margin-bottom: 1em;
+	}
+	@include media (">phone") {
+		margin-right: 1em;
+	}
+}
+.promo-row>div:first-of-type {
+	margin-left:0;
+	@include media (">phone") {
+		margin-left: 0.75em;
+	}
+}
+.promo-row>div:last-of-type {
+    margin-right: 0;
+}
+.promo-row>div a img {
+	@include media ("<=phone") {
+		width: 100%;
+	}
+}
