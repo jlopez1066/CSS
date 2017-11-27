@@ -1,0 +1,45 @@
+.dialogContent {
+	p {
+	font-size: 1em;
+		&.disclaimer {
+			font-size: .75em;
+		}
+	}
+	a.apply-coupon {
+		font-size: 1.5em;
+		color: #9C2D49;
+	}
+	.view-coupon-policy {
+		text-decoration: underline;
+	}
+}
+
+#cart-add-coupon-dialog {
+	.view-coupon-policy {
+		text-decoration: none;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.mobile-pencil {
+	display: none;
+}
+div.black-back .row .pencil {
+	margin: 1em auto;
+	&.rounded-corner {
+		overflow: hidden;
+	}
+}
+
+.view-coupon-policy {
+	&.shipping {
+		padding: 0 !important;
+	}
+}
+.ui-dialog {
+	@media only screen and (max-width: 425px) {
+		width: auto !important;
+		left: 0 !important;
+	}
+}

@@ -1,0 +1,157 @@
+.holiday-bar {
+    background: url('../images/TimerPole.svg?$staticlink$') no-repeat transparent;
+    bottom: 5px !important;
+    height: 300px;
+    position: fixed;
+    right: 0;
+    width: 275px;
+    z-index: 9999
+}
+@media only screen and (max-width: 500px) {
+    .holiday-bar {
+        background: url('../images/TimerPole_Mobile.svg?$staticlink$') no-repeat transparent;
+    }
+    .holiday-bar.clock__tag--active  {
+         bottom: -130px !important;
+    }
+}
+.clock__tag {
+    width: 250px;
+    height: auto;
+    text-align: center;
+    background: #000; /*#97C93C*/
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    z-index: 999;
+}
+.clock__tag--active {
+    padding-top: 1.55em;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    animation-name: clockSlidIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+}
+@media only screen and (max-width: 500px) {
+    .clock__tag--active {
+        bottom: 40px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-name: clockSlidUp;
+    }
+}
+.clock__tag--hide {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    opacity: 0;
+    animation-name: clockSlidOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+}
+@media only screen and (max-width: 500px) {
+    .clock__tag--hide {
+        bottom: 40px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-name: clockSlidDown;
+    }
+}
+.clock__tag .clock__counter {
+    width: 230px;
+    margin: 0.25em auto;
+}
+.clock__tag .clock__counter .clock__container {
+    display: inline-block;
+    margin: 0;
+    padding: 0.35em;
+    background: #C32032;
+    box-sizing: border-box;
+    width: 40px;
+}
+.clock__tag .clock__copy {
+    width: 230px;
+    margin: 0 auto 0.25em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+.clock__tag a {
+    color: #fff;
+    background: #C32032;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.25em 0.25em 0.5em;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.clock__tag .clock__value {
+    background: #87191C;
+    box-sizing: border-box;
+    padding: 0.25em;
+    display: block;
+    font-size: 0.75em;
+}
+.clock__tag .clock__label {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-family: sans-serif;
+    margin: 0.25em 0 0;
+    font-weight: bold;
+}
+@keyframes clockSlidIn {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    85% {
+        transform: translateX(250px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes clockSlidUp {
+    0% {
+        transform: translate(-50%, 1000px);
+        opacity: 0;
+    }
+    85% {
+        transform: translate(-50%, 125px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+@keyframes clockSlidOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+}
+@keyframes clockSlidDown {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, 1000px);
+        opacity: 0;
+    }
+}

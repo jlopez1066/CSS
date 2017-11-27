@@ -36,6 +36,40 @@ div.row.row-1 > div.column.right > .tier2-container.home-block:nth-child(2), .ti
 }
 
 /* lpos - march */
+.tier2-container.home-block.three-high {
+	@media (min-width: 1280px) {
+		width: 406px;
+		height: 146px;
+		overflow: hidden;
+	}
+	@media (max-width: 1279px) and (min-width: 768px){
+		clear: both;
+		float: none;
+		height: auto;
+		margin-bottom: 6px;
+		outline: none;
+		text-align: center;
+	}
+	@media (max-width: 1279px) and (min-width: 768px) and (orientation: portrait) {
+		margin: 0.5em auto;
+	}
+}
+.tier2-container.home-block.three-high:nth-child(2) {
+	margin-bottom: 13px;
+	outline: none !important;
+	@media (max-width: 1279px) and (min-width: 768px) {
+		margin-bottom: 6px;
+	}
+}
+.row .tier2-container:first-child {
+	@media (min-width: 1280px) {
+	    margin-bottom: 10px;
+	}
+}
+.tier2-container.home-block:nth-child(3) {
+	// outline: 1px solid #e1e1e1;
+	outline: none;
+}
 .row .tier3-container {
 	@media (min-width : 768px) and (max-width : 1279px) and (orientation : portrait) {
 		width: 220px;
@@ -54,13 +88,14 @@ div.row.row-1 > div.column.right > .tier2-container.home-block:nth-child(2), .ti
 }
 .tier3-container.home-block.four-block {
 	width: 300px;
-	height: auto;
+	height: 265px;
 	margin-right:1em;
 	overflow: visible;
 	@media  (min-width: 768px) and (max-width: 1279px) {
 		width: 236px;
+		height: auto;
 		margin-top: 0.25em;
-		margin-bottom: 0.25em;
+		margin-bottom: 0;
 	}
 	@media (min-width : 768px) and (max-width : 1279px) and (orientation : portrait) {
 		width: 23.23%;

@@ -1,0 +1,22 @@
+.pencil.home-block.full {
+	height: auto;
+	text-align: center;
+	position: relative;
+}
+.row.row-pencil {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	@media only screen and (max-width: 425px) {
+		max-width: 320px;
+		overflow: hidden;
+	}
+}
+.row.row-pencil a {
+	width: 100%;
+	@media only screen and (max-width: 425px) {
+		display: block;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+}
