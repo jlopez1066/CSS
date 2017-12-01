@@ -1,5 +1,5 @@
-div.row.row-1 > div.column.right > .tier2-container.home-block:nth-child(2), .tier3-container.home-block, .tier4-container.home-block {
-	outline: 1px solid #e1e1e1;
+div.row.row-1 > div.column.right > .tier2-container.home-block:nth-child(2), .tier3-container.home-block, .tier3-container.home-block.four-block, .tier4-container.home-block {
+	border: 1px solid #e1e1e1;
 }
 .tier3-container.home-block {
 	box-sizing: content-box;
