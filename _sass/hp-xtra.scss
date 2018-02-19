@@ -120,3 +120,19 @@ div.row.row-1 > div.column.right > .tier2-container.home-block:nth-child(2), .ti
 		margin-right: 0;
 	}
 }
+
+div.row.row-1 > div.tier1-container > div > button.slick-arrow, div.row.row-1 > div.tier1-container > div > div > button.slick-arrow {
+	@media only screen and (min-width: 426px) {
+		background: url(http://demandware.edgesuite.net/aaeo_prd/on/demandware.static/Sites-MichaelsUS-Site/-/default/v1421656960751/images/sprite.png) no-repeat transparent !important;
+		height: 57px !important;
+		&.slick-prev {
+			background-position: -320px -117px !important;
+		}
+		&.slick-next.slick-arrow {
+			background-position: -386px -117px !important;
+		}
+	}
+}
+.slick-dots button {
+	background:transparent !important;
+}
